@@ -1,10 +1,10 @@
 body {
-background-color: rgb(34, 33, 33);
+  background-color: black;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1400px;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 header {
@@ -43,47 +43,130 @@ header h2 {
 }
 
 header a {
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: white;
-    background-color: brown;
-    padding: 16px 32px;
-    border-radius: 100px;
-    display: inline-block;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background-color: brown;
+  padding: 16px 32px;
+  border-radius: 100px;
+  display: inline-block;
 }
 
 header a:hover {
-    background-color: rgb(123, 30, 30);
+  background-color: rgb(123, 30, 30);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 footer {
-    color: white;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/logo.jpg);
+  background-size: 100%;
+  padding: 100px 0px;
+  background-repeat: no-repeat;
 }
 
-@media (max-width: 800px) {
-    header {
-        padding: 20px 0px;
-    }
+footer h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.99px;
+  text-align: left;
+  margin: 20px;
+}
 
-    header h1 {
-        font-size: 80px;
-        margin: 30px 0px;
-    }
+footer p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 20px;
+}
 
-    header h2 {
-        font-size: 20px;
-        margin: 0px 0px 20px;
-    }
+footer ul {
+  padding: 0px;
+  margin: 20px;
+}
 
-    header h3 {
-        font-size: 18px;
-        margin: 0px;
-    }
+footer li {
+  list-style: none;
+}
 
-    header a {
-        font-size: 13px;
-        margin-bottom: 20px;
-    }
+footer a {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: rgb(123, 30, 30);
+}
+
+.final-sentence {
+  color: white;
+  font-family: "Roboto";
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  header {
+    padding: 20px 0px;
+  }
+
+  header h1 {
+    font-size: 80px;
+    margin: 30px 0px;
+  }
+
+  header h2 {
+    font-size: 20px;
+    margin: 0px 0px 20px;
+  }
+
+  header h3 {
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  header a {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  footer {
+    background-size: cover;
+  }
+
+  footer,
+  footer h3,
+  footer p,
+  footer a {
+    padding: 0px;
+  }
+
+  footer h3 {
+    font-size: 17px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 14px;
+  }
 }
