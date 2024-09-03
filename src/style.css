@@ -1,7 +1,81 @@
-h1 {
+body {
+background-color: rgb(34, 33, 33);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(../images/P7HQBJMCGNHV5MO2H25EA5EDHI.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 200px 0px;
+  text-align: center;
+}
+
+header h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 28px;
+}
+
+header h1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
   font-size: 128px;
+  margin-bottom: 70px;
+}
+
+header h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 46.88px;
+  margin-bottom: 100px;
+}
+
+header a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: brown;
+    padding: 16px 32px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: rgb(123, 30, 30);
+}
+
+footer {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 60px 0px;
+    }
+
+    header h1 {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 18px;
+    }
 }
