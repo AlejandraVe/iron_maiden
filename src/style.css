@@ -61,6 +61,8 @@ header a:hover {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
+  margin: 0px 30px 0px 30px;
 }
 
 footer {
@@ -78,7 +80,6 @@ footer h3 {
   font-weight: 700;
   line-height: 31.99px;
   text-align: left;
-  margin: 20px;
 }
 
 footer p {
@@ -87,12 +88,10 @@ footer p {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  margin: 20px;
 }
 
 footer ul {
   padding: 0px;
-  margin: 20px;
 }
 
 footer li {
@@ -148,17 +147,12 @@ footer a:hover {
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 8px;
+    margin: 0px 10px 0px 10px;
   }
 
   footer {
     background-size: cover;
-  }
-
-  footer,
-  footer h3,
-  footer p,
-  footer a {
-    padding: 0px;
   }
 
   footer h3 {
