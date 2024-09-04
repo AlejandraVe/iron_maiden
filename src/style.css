@@ -58,6 +58,47 @@ header a:hover {
   background-color: rgb(123, 30, 30);
 }
 
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+  main {
+    background-color: white;
+  }
+
+  main img {
+    padding-top: 100px;
+    max-width: 100%;
+  }
+
+  main h2 {
+    font-family: "Poppins", serif;
+    font-size: 13px;
+    margin-bottom: 0px;
+    letter-spacing: 4px;
+    opacity: .4;
+  }
+
+  main h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  main p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-right: 30px;
+  }
+
+  section {
+    padding: 64px;
+  }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -142,6 +183,14 @@ footer a:hover {
   header a {
     font-size: 13px;
     margin-bottom: 20px;
+  }
+
+  section {
+    padding: 0px 20px 0 20px;
+  }
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
   }
 
   .grid {
